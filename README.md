@@ -1,4 +1,4 @@
-# Reqa
+# Requirements
 - Requires npm
 - $ `npm install` at root directory
 - Make changes and run $`npm run build`

@@ -5,12 +5,11 @@ import Results from "./results";
 import { render } from "react-dom";
 import createClass from "create-react-class";
 
-const ethanolDensity = 0.789,
-		terrainCoefficient = {
+const terrainCoefficient = {
 			"Flat": 15,
 			"Hilly": 8,
-			"Forested": 3,
-			"Mountain": 0.4
+			"Forested": 0.4,
+			"Mountain": 3
 		};
 
 
@@ -41,7 +40,7 @@ const App = createClass({
 				/>
 				<Results
 						terrainCoefficient={ terrainCoefficient[this.state.terrain] }
-					bodyMass={ this.state.distance }
+					area={ this.state.distance }
 				/>
 			</div>			
 		)

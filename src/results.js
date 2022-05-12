@@ -2,12 +2,12 @@ import React from 'react';
 
 function Results(props) {
 
-	function calc(mass, terrain){
-		return (mass/terrain)**2
+	function calc(area, terrainRange){
+		let sideOfSquareArea = Math.sqrt(area);
+		return Math.pow((sideOfSquareArea/terrainRange), 2);
 	}
 
-	var calculatedBAC = BAC((props.bodyMass), props.terrainCoefficient);
-	var calcGoTenna = calc(props.bodyMass,props.terrainCoefficient);
+	let calcGoTenna = Math.ceil(calc(props.area,props.terrainCoefficient));
 
 	const buttonbackground = {
 		backgroundColor: '#1bbc35 !important',

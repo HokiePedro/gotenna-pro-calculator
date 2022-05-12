@@ -3,7 +3,7 @@ import React from "react";
 function BodyConfig(props) {
 	return <div className="form-inline well">
 		<div className="form-group">
-		<label htmlFor="body-mass">Distance (Sq. Miles):&nbsp;</label>
+		<label htmlFor="body-mass">Area (Sq. Miles):&nbsp;</label>
 			<input id="body-mass" className="form-control" type="number" min="1" max="1000"
 				value={props.distance}
 				onChange={props.handleDistanceChange} />

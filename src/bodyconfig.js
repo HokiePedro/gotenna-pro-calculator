@@ -30,19 +30,19 @@ function BodyConfig(props) {
 					onChange={props.handleTerrainChange}
 				/>
 			</label>
-			<label className="form-control">Forested&nbsp;
-				<input
-						type="radio"
-						value="Forested"
-						checked={ props.terrain === "Forested" }
-						onChange={props.handleTerrainChange}
-				/>
-			</label>
 			<label className="form-control">Mountain&nbsp;
 				<input
 						type="radio"
 						value="Mountain"
 						checked={ props.terrain === "Mountain" }
+						onChange={props.handleTerrainChange}
+				/>
+			</label>
+			<label className="form-control">Forested&nbsp;
+				<input
+						type="radio"
+						value="Forested"
+						checked={ props.terrain === "Forested" }
 						onChange={props.handleTerrainChange}
 				/>
 			</label>

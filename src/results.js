@@ -1,9 +1,6 @@
 import React from 'react';
 
 function Results(props) {
-	function BAC(bodyMass, terrainCoefficient) {
-		return (terrainCoefficient) * (bodyMass);
-	}
 
 	function calc(mass, terrain){
 		return (mass/terrain)**2

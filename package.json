@@ -8,8 +8,8 @@
     "build": "webpack",
     "devserver": "webpack-dev-server"
   },
-  "author": "Maciej Bojko",
-  "license": "ISC",
+  "author": "Pedro Sorto",
+  "license": "",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",

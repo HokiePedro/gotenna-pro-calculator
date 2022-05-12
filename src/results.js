@@ -4,7 +4,7 @@ function Results(props) {
 
 	function calc(area, terrainRange){
 		let sideOfSquareArea = Math.sqrt(area);
-		return Math.pow((sideOfSquareArea/terrainRange), 2);
+		return Math.pow(1 + (sideOfSquareArea/terrainRange), 2);
 	}
 
 	let calcGoTenna = Math.ceil(calc(props.area,props.terrainCoefficient));

@@ -1,39 +1,53 @@
 import React from "react";
 
 function BodyConfig(props) {
-  return <div className="form-inline well">
-    <div className="form-group">
-      <label htmlFor="body-mass">Weight (kg):&nbsp;</label>
-      <input id="body-mass" className="form-control" type="number" min="10" max="200"
-             value={props.weight}
-             onChange={props.handleWeightChange} />
-      <input className="form-control" type="range" min="10" max="200"
-             value={props.weight}
-             onChange={props.handleWeightChange} />
-
-    </div>
-    <div className="form-group">
-      <label>Gender:&nbsp;</label>
-      <label className="form-control">Male&nbsp;
-        <input
-            type="radio"
-            value="male"
-            checked={ props.gender === "male" }
-            onChange={props.handleSexChange}
-        />
-      </label>
-      <label className="form-control">Female&nbsp;
-        <input
-            type="radio"
-            value="female"
-            checked={ props.gender === "female" }
-            onChange={props.handleSexChange}
-        />
-      </label>
-    </div>
-    <button onClick={props.addRow} className="btn btn-primary higher-2px-hack">Add a drink</button>
-
-  </div>
+	return <div className="form-inline well">
+		<div className="form-group">
+		<label htmlFor="body-mass">Distance (Sq. Miles):&nbsp;</label>
+			<input id="body-mass" className="form-control" type="number" min="1" max="1000"
+				value={props.distance}
+				onChange={props.handleDistanceChange} />
+			<input className="form-control" type="range" min="1" max="1000"
+				value={props.distance}
+				onChange={props.handleDistanceChange} />
+		
+				</div>
+		<div className="form-group">
+			<label>Terrain:&nbsp;</label>
+			<label className="form-control">Flat&nbsp;
+				<input 
+					type="radio" 
+					value="Flat"
+					checked={ props.terrain === "Flat" }
+					onChange={props.handleTerrainChange}
+				/>
+			</label>
+			<label className="form-control">Hilly&nbsp;
+				<input 
+					type="radio" 
+					value="Hilly"
+					checked={ props.terrain === "Hilly" }
+					onChange={props.handleTerrainChange}
+				/>
+			</label>
+			<label className="form-control">Forested&nbsp;
+				<input
+						type="radio"
+						value="Forested"
+						checked={ props.terrain === "Forested" }
+						onChange={props.handleTerrainChange}
+				/>
+			</label>
+			<label className="form-control">Mountain&nbsp;
+				<input
+						type="radio"
+						value="Mountain"
+						checked={ props.terrain === "Mountain" }
+						onChange={props.handleTerrainChange}
+				/>
+			</label>
+		</div>
+	</div>
 }
 
 

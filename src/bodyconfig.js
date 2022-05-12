@@ -1,7 +1,7 @@
 import React from "react";
 
 function BodyConfig(props) {
-	return <div className="form-inline well">
+	return <div className="form-inline well selector">
 		<div className="form-group">
 		<label htmlFor="body-mass">Area (Sq. Miles):&nbsp;</label>
 			<input id="body-mass" className="form-control" type="number" min="1" max="1000"

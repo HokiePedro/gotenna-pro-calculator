@@ -6,12 +6,12 @@ module.exports = {
 	entry: "./src/index.js",
 	devtool: "eval",
 	output: {
-		path: path.join(__dirname, "/public"),
+		path: path.join(__dirname, "/"),
 		filename: "bundle.js",
-		publicPath: "/public/"
+		publicPath: "/"
 	},
 	devServer: {
-		publicPath: "/public/"
+		publicPath: "/"
 	},
 	resolve: {
 		extensions: [".js", ".json"]
